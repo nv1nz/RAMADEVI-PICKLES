@@ -1,75 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>RAMADEVI PICKLES</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Nunito&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Nunito&display=swap');
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-image: url('background.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #4e342e;
+    }
+    h1, h2, h3 {
+      font-family: 'Kaisei Decol', serif;
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <h1>🪔 RAMADEVI PICKLES</h1>
-    <p>Homemade | Organic | Grandma's Recipe</p>
+<body class="flex flex-col min-h-screen bg-yellow-50 bg-opacity-90">
+
+  <!-- Header -->
+  <header class="bg-red-800 text-amber-100 border-b-4 border-yellow-300 p-8 text-center">
+    <h1 class="text-4xl md:text-5xl font-semibold mb-2">RAMADEVI PICKLES</h1>
+    <p class="italic text-lg md:text-xl">Homemade • Organic • Grandma's Traditional Recipes</p>
   </header>
 
-  <section class="about">
-    <h2>Why Choose Us?</h2>
-    <p>
-      Our pickles are <strong>100% homemade</strong> using <strong>organic ingredients</strong> and 
-      <strong>no preservatives</strong>. Inspired by traditional methods used by our grandmothers,
-      each pickle is slow-crafted with love, patience, and authenticity — just like the olden days.
-    </p>
-  </section>
+  <!-- Main content -->
+  <main class="flex-grow max-w-6xl mx-auto p-6 md:p-12 bg-yellow-100 bg-opacity-90 rounded-xl shadow-lg my-8">
 
-  <section class="pickles">
-    <h2>Our Special Pickles</h2>
-    <div class="pickle-list">
-      <div class="pickle">
-        <img src="https://via.placeholder.com/150" alt="Mango Pickle">
-        <h3>Mango</h3>
-        <p>Spicy and tangy, made from raw mangoes & mustard oil.</p>
-      </div>
-      <div class="pickle">
-        <img src="https://via.placeholder.com/150" alt="Lemon Pickle">
-        <h3>Lemon</h3>
-        <p>Zesty lemons aged with salt and Indian spices.</p>
-      </div>
-      <div class="pickle">
-        <img src="https://via.placeholder.com/150" alt="Gongura Pickle">
-        <h3>Gongura</h3>
-        <p>A classic South Indian favorite with tangy sorrel leaves.</p>
-      </div>
-      <div class="pickle">
-        <img src="https://via.placeholder.com/150" alt="Imli Pickle">
-        <h3>Imli</h3>
-        <p>Sour tamarind mixed with jaggery and red chilli.</p>
-      </div>
-      <div class="pickle">
-        <img src="https://via.placeholder.com/150" alt="Gooseberry Pickle">
-        <h3>Gooseberry</h3>
-        <p>Rich in Vitamin C and packed with bold flavor.</p>
-      </div>
-      <div class="pickle">
-        <img src="https://via.placeholder.com/150" alt="Red Chilli Pickle">
-        <h3>Red Chilli</h3>
-        <p>For spice lovers — fiery, bold, and unforgettable.</p>
-      </div>
-      <div class="pickle">
-        <img src="https://via.placeholder.com/150" alt="Bitter Gourd Pickle">
-        <h3>Bitter Gourd</h3>
-        <p>Uniquely bitter-sweet, a nostalgic classic in many homes.</p>
-      </div>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section class="mb-16">
+      <h2 class="text-3xl text-red-900 text-center mb-6 border-b-2 border-red-700 inline-block px-4">Why Choose Us?</h2>
+      <p class="max-w-3xl mx-auto text-center text-lg text-yellow-900 leading-relaxed">
+        At <span class="font-semibold">RAMADEVI PICKLES</span>, every jar is a treasure trove of tradition and taste. Crafted lovingly with 100% organic ingredients and no preservatives, our pickles capture the authentic flavors passed down through generations. Made just like grandma used to, each bite bursts with rich spices, tangy zest, and a homemade touch that warms the heart. Discover the true essence of Indian heritage in every spoonful.
+      </p>
+    </section>
 
-  <section class="contact">
-    <h2>📞 Contact Us</h2>
-    <p><strong>Phone:</strong> <a href="tel:8806890021">8806890021</a></p>
-  </section>
+    <!-- Pickles Section -->
+    <section class="mb-16">
+      <h2 class="text-3xl text-red-900 text-center mb-8 border-b-2 border-red-700 inline-block px-4">Our Special Pickles</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        
+        <!-- Pickle Item -->
+        <div class="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-6 shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 text-center">
+          <img src="mango-pickle.jpg" alt="Mango Pickle" class="mx-auto h-40 object-contain rounded-lg mb-4" />
+          <h3 class="text-xl text-red-700 font-semibold mb-2">Mango Pickle</h3>
+          <p class="text-yellow-900">Spicy and tangy, made from raw mangoes & mustard oil.</p>
+        </div>
 
-  <footer>
-    <p>&copy; 2025 RAMADEVI PICKLES. Made with ❤️ in India.</p>
+        <div class="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-6 shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 text-center">
+          <img src="lemon-pickle.jpg" alt="Lemon Pickle" class="mx-auto h-40 object-contain rounded-lg mb-4" />
+          <h3 class="text-xl text-red-700 font-semibold mb-2">Lemon Pickle</h3>
+          <p class="text-yellow-900">Zesty lemons aged with salt and Indian spices.</p>
+        </div>
+
+        <div class="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-6 shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 text-center">
+          <img src="imli-pickle.jpg" alt="Imli Pickle" class="mx-auto h-40 object-contain rounded-lg mb-4" />
+          <h3 class="text-xl text-red-700 font-semibold mb-2">Imli (Tamarind) Pickle</h3>
+          <p class="text-yellow-900">Sour tamarind mixed with jaggery and red chilli.</p>
+        </div>
+
+        <div class="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-6 shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 text-center">
+          <img src="gongura-pickle.jpg" alt="Gongura Pickle" class="mx-auto h-40 object-contain rounded-lg mb-4" />
+          <h3 class="text-xl text-red-700 font-semibold mb-2">Gongura Pickle</h3>
+          <p class="text-yellow-900">A classic South Indian favorite with tangy sorrel leaves.</p>
+        </div>
+
+        <div class="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-6 shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 text-center">
+          <img src="chilli-pickle.jpg" alt="Red Chilli Pickle" class="mx-auto h-40 object-contain rounded-lg mb-4" />
+          <h3 class="text-xl text-red-700 font-semibold mb-2">Red Chilli Pickle</h3>
+          <p class="text-yellow-900">Fiery, bold, and unforgettable.</p>
+        </div>
+
+        <div class="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-6 shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 text-center">
+          <img src="gooseberry-pickle.jpg" alt="Gooseberry Pickle" class="mx-auto h-40 object-contain rounded-lg mb-4" />
+          <h3 class="text-xl text-red-700 font-semibold mb-2">Gooseberry Pickle</h3>
+          <p class="text-yellow-900">Rich in Vitamin C and packed with bold flavor.</p>
+        </div>
+
+        <div class="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-6 shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 text-center">
+          <img src="bitter-gourd-pickle.jpg" alt="Bitter Gourd Pickle" class="mx-auto h-40 object-contain rounded-lg mb-4" />
+          <h3 class="text-xl text-red-700 font-semibold mb-2">Bitter Gourd Pickle</h3>
+          <p class="text-yellow-900">Uniquely bitter-sweet, a nostalgic classic in many homes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="text-center">
+      <h2 class="text-3xl text-red-900 mb-6 border-b-2 border-red-700 inline-block px-4">Contact Us</h2>
+      <p class="text-yellow-900 text-xl">
+        Phone: <a href="tel:8806890021" class="text-red-700 font-bold hover:underline">8806890021</a>
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-700 text-yellow-100 text-center p-6 font-serif">
+    &copy; 2025 RAMADEVI PICKLES. Made with ❤️ in India.
   </footer>
 </body>
 </html>

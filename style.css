@@ -1,78 +1,106 @@
+/* Fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Nunito&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #fffbea;
-    color: #333;
+  font-family: 'Nunito', sans-serif;
+  background-color: #fff8e1;
+  color: #4e342e;
+  line-height: 1.7;
 }
 
 header {
-    background: #e63946;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #c62828;
+  color: #fff3e0;
+  text-align: center;
+  padding: 30px 10px;
+  border-bottom: 5px double #ffcc80;
+  font-family: 'Kaisei Decol', serif;
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.about {
+  background-color: #ffecb3;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 2px dashed #d84315;
+  border-bottom: 2px dashed #d84315;
+}
+
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #6a1b09;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1em;
 }
 
 .pickles {
-    padding: 40px 20px;
-    text-align: center;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .pickles h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #bf360c;
 }
 
 .pickle-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .pickle {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 15px;
-    width: 200px;
+  background-color: #fff3e0;
+  border: 2px solid #ffb74d;
+  border-radius: 12px;
+  width: 200px;
+  padding: 15px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
 .pickle img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .pickle h3 {
-    margin: 10px 0 5px;
+  margin: 10px 0 5px;
+  color: #e65100;
+}
+
+.pickle p {
+  font-size: 0.95em;
+  color: #5d4037;
 }
 
 .contact {
-    padding: 30px 20px;
-    background: #f1faee;
-    text-align: center;
+  background-color: #ffecb3;
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 2px dashed #bf360c;
 }
 
-.contact a {
-    color: #1d3557;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer {
-    background: #a8dadc;
-    color: #333;
-    text-align: center;
-    padding: 15px 0;
-}
+.contact h2 {
+  colo
